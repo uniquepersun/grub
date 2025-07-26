@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>this iz grubbb!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="./favicon.png"/>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+      body {
+        font-family: 'Comic Relief', cursive;
+      }
+      @keyframes warp{
+        0% {
+          transform: skewY(0deg);
+        }
+        50% {
+          transform: skewY(3deg);
+        }
+        100% {
+          transform: skewY(0deg);
+        }
+      }
+      .warp{
+        animation: warp 6s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <header class="bg-white shadow sticky top-0 z-50">
+      <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">FIGMAs</h1>
+        <nav class="space-x-4 hidden md:block">
+          <a href="#" class="hover:text-blue-600">Home</a>
+          <a href="#features" class="hover:text-blue-600">Features</a>
+          <a href="#faq" class="hover:text-blue-600">FAQ!</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="h-[80vh] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white flex items-center justify-center warp">
+      <div class="text-center px-4">
+        <h2 class="text-4xl font-extrabold mb-4">this is figma</h2>
+        <p class="text-lg max-w-xl mx-auto">
+          it is built for !responsiveness.
+        </p>
+      </div>
+    </section>
+
+    <section id="features" class="container mx-auto px-4 py-16">
+      <h3 class="text-3xl font-bold text-center mb-10">figmass highlights!</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl shadow-md p-6">
+          <h4 class="text-xl font-semibold mb-2">as fast as turtle</h4>
+          <p>uhh, fast as imagineable.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6">
+          <h4 class="text-xl font-semibold mb-2">precision</h4>
+          <p>okayy, figma gets it</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow-md p-6">
+          <h4 class="text-xl font-semibold mb-2">butt! is it available on mobile??</h4>
+          <p>yeaa funily enough, okayyy!</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="bg-gray-200 py-16 px-4">
+      <div class="container mx-auto">
+        <h3 class="text-3xl font-bold text-center mb-10">FAQ</h3>
+        <div class="space-y-6 max-w-2xl mx-auto">
+          <details class="bg-white p-4 rounded-lg shadow">
+            <summary class="cursor-pointer font-semibold">am I a coder?</summary>
+            <p class="mt-2 text-sm">hmm.. ig</p>
+          </details>
+          <details class="bg-white p-4 rounded-lg shadow">
+            <summary class="cursor-pointer font-semibold">did I not have any ideas to make a website on?</summary>
+            <p class="mt-2 text-sm">deffo yess!</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-white py-6 text-center shadow-inner">
+      <p class="text-sm">made with <3 and tailwind</p>
+    </footer>
+  </body>
+</html>
